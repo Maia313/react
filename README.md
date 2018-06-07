@@ -197,7 +197,7 @@ const Items = (props) => {
 }
 
 Items.defaultProps = {
-  **quantity: 0**
+  quantity: 0
 }
 
 class ShoppingCart extends React.Component {
@@ -205,7 +205,7 @@ class ShoppingCart extends React.Component {
     super(props);
   }
   render() {
-    return <Items **quantity={10}** />
+    return <Items quantity={10} />
   }
 };
 ```
