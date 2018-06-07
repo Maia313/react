@@ -1,17 +1,17 @@
 # React
 
-1.Render HTML elements to the DOM
-2.Create components:2 ways
-3.Parent-child relationship
-4.Rendering JSX vs React components
-5.Props
-6.Pass an Array as Props
-7.Recognize child parent components
-8.Default props
-9.Override default props
-10.PropTypes
-11.Access Props Using this.props
-12.Stateless functional components
+1. Render HTML elements to the DOM
+2. Create components:2 ways
+3. Parent-child relationship
+4. Rendering JSX vs React components
+5. Props
+6. Pass an Array as Props
+7. Recognize child parent components
+8. Default props
+9. Override default props
+10. PropTypes
+11. Access Props Using this.props
+12. Stateless functional components
 
 React uses a syntax extension of JavaScript called `JSX` that allows you to write HTML directly within JavaScript.
 
