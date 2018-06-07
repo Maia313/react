@@ -1,5 +1,18 @@
 # React
 
+1.Render HTML elements to the DOM
+2.Create components:2 ways
+3.Parent-child relationship
+4.Rendering JSX vs React components
+5.Props
+6.Pass an Array as Props
+7.Recognize child parent components
+8.Default props
+9.Override default props
+10.PropTypes
+11.Access Props Using this.props
+12.Stateless functional components
+
 React uses a syntax extension of JavaScript called `JSX` that allows you to write HTML directly within JavaScript.
 
 Because `JSX` is a syntactic extension of JavaScript, you can actually write JavaScript directly within `JSX`. To do this, you simply include the code you want to be treated as JavaScript within curly braces: `{ 'this is treated as JavaScript code' }`. Keep this in mind, since it's used in several future challenges.
@@ -28,7 +41,7 @@ So far, you've learned that `JSX` is a convenient tool to write readable HTML wi
 
 As you would expect, `ReactDOM.render()` must be called after the JSX element declarations, just like how you must declare variables before using them.
 
-### Creating components
+### Create components
 
 There are **two ways** to create a *React component*. **The first way** is to **use a JavaScript function**. *Defining a component in this way creates a stateless functional component.* The concept of state in an application will be covered in later challenges. For now, think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data. (We'll cover the second way to create a React component in the next challenge.)
 
