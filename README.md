@@ -148,3 +148,40 @@ This will join all colors array items into a comma separated string and produce:
 <p>green, blue, red</p>
 ```
 Later, we will learn about other common methods to render arrays of data in React.
+
+### Recognize child parent components
+```js
+const ChildComponent = (props) => <p>{props.colors.join(', ')}</p>
+```
+```js
+<ParentComponent>
+<ChildComponent colors={["green", "blue", "red"]} />
+</ParentComponent>
+```
+
+```js
+const List= (props) => {
+  { /* change code below this line */ }
+  return <p>{}</p>
+  { /* change code above this line */ }
+};
+
+class ToDo extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>To Do Lists</h1>
+        <h2>Today</h2>
+        { /* change code below this line */ }
+        <List/>
+        <h2>Tomorrow</h2>
+        <List/>
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+```
