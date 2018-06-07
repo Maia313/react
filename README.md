@@ -9,3 +9,13 @@ Because `JSX` is a syntactic extension of JavaScript, you can actually write Jav
 **One important thing to know about nested JSX is that it must return a single element.**
 
 This one parent element would wrap all of the other levels of nested elements.
+
+Comments in JSX {/* */} 
+```react
+const JSX = (
+  <div>
+    <h1>Hello World</h1>
+    <p>Lets render this to the DOM</p>
+  </div>
+);
+```
