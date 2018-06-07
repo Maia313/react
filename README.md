@@ -282,7 +282,7 @@ class ResetPassword extends React.Component {
     return (
         <div>
           <h2>Reset Password</h2>
-          <h3>We've generated a new temporary password for you.</h3>
+          <h3>We have generated a new temporary password for you.</h3>
           <h3>Please reset this password from your account settings ASAP.</h3>
           
           <ReturnTempPassword tempPassword='tempPassword' />
