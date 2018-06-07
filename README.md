@@ -129,4 +129,22 @@ const Welcome = (props) => <h1>Hello, {props.user}!</h1>
 ```
 It is standard to call this value `props` and when dealing with stateless functional components, you basically consider it as an argument to a function which returns `JSX`. You can access the value of the argument in the function body. With class components, you will see this is a little different.
 
+### Pass an Array as Props
 
+The last challenge demonstrated how to pass information from a parent component to a child component as props or properties. This challenge looks at how arrays can be passed as props. To pass an array to a JSX element, it must be treated as JavaScript and wrapped in curly braces.
+
+```js
+<ParentComponent>
+<ChildComponent colors={["green", "blue", "red"]} />
+</ParentComponent>
+```
+
+The child component then has access to the array property colors. Array methods such as join() can be used when accessing the property.
+```js
+const ChildComponent = (props) => <p>{props.colors.join(', ')}</p>
+```
+This will join all colors array items into a comma separated string and produce:
+```js
+<p>green, blue, red</p>
+```
+Later, we will learn about other common methods to render arrays of data in React.
