@@ -11,8 +11,6 @@
 9. `Override default props`
 10. `PropTypes`
 11. `Access Props Using this.props`
-12. `Stateless functional components`
-13. `Stateful components`
 
 React uses a syntax extension of JavaScript called `JSX` that allows you to write HTML directly within JavaScript.
 
