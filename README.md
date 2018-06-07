@@ -11,7 +11,7 @@ Because `JSX` is a syntactic extension of JavaScript, you can actually write Jav
 This one parent element would wrap all of the other levels of nested elements.
 
 Comments in JSX {/* */} 
-```react
+```js
 const JSX = (
   <div>
     <h1>Hello World</h1>
