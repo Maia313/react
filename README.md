@@ -358,6 +358,7 @@ The return statement, renders this value in an h1 tag using the variable name. R
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
+    //
     this.state = {
       name: 'freeCodeCamp'
     }
@@ -365,10 +366,10 @@ class MyComponent extends React.Component {
   render() {
     // 
     const name = this.state.name;
-    // change code above this line
+    // 
     return (
       <div>
-       
+       //
         <h1>{name}</h1>
        
       </div>
