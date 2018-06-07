@@ -99,12 +99,8 @@ class ParentComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>I am the parent</h1>
-        { /* change code below this line */ }
-      
+        <h1>I am the parent</h1> 
           <ChildComponent />
-
-        { /* change code above this line */ }
       </div>
     );
   }
