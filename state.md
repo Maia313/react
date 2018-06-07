@@ -119,3 +119,5 @@ class MyComponent extends React.Component {
   }
 };
 ```
+### Use State to Toggle an Element
+
