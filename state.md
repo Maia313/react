@@ -103,11 +103,11 @@ class MyComponent extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    // change code below this line
+    
     this.setState({
       name: 'React Rocks!'
     });
-    // change code above this line
+    
   }
   render() {
     return (
@@ -181,7 +181,6 @@ class Counter extends React.Component {
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
   }
-  // change code below this line
 
   reset() {
     this.setState({ count: 0 });
@@ -194,7 +193,6 @@ class Counter extends React.Component {
   decrement() {
     this.setState({ count: this.state.count - 1 })
   }
-  // change code above this line
   render() {
     return (
       <div>
