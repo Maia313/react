@@ -20,7 +20,7 @@ Since Redux is a state management framework, updating state is one of its core t
 
 Think of Redux actions as messengers that deliver information about events happening in your app to the Redux store. The store then conducts the business of updating state based on the action that occurred.
 
-##### Define an Action Creator
+#### Define an Action Creator
 
 After creating an action, the next step is sending the action to the Redux store so it can update its state. In Redux, you define action creators to accomplish this. An action creator is simply a JavaScript function that returns an action. In other words, action creators create objects that represent action events.
 
