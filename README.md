@@ -113,11 +113,11 @@ class ParentComponent extends React.Component {
 
 
 * Curly braces, { } are used
-+ to accessing props,
-+ to pass props, 
-+ to access state, 
-+ to insert comments into your code,
-+ and style components.
+  + to accessing props,
+  + to pass props, 
+  + to access state, 
+  + to insert comments into your code,
+  + and style components.
 
 
 
