@@ -1,3 +1,11 @@
+### The core principles of Redux
+
+1. `Create actions and action creators`, 
+2. `Create a Redux store`, 
+3. `Dispatch your actions against the store`,
+4. `Design state updates with pure reducers`, 
+5. `Manage complex state with reducer composition`,
+6. `Handle asynchronous actions`. 
 
 **Redux** is a state management framework that can be used with a number of different web technologies, including React.
 
