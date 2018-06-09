@@ -57,3 +57,31 @@ this.setState({
   }
 };
 ```
+
+```js
+// define ADD, addMessage(), messageReducer(), and store here:
+const ADD = 'ADD'; //action type
+const defaultState = []; 
+
+//action creator which return the msg in the return action
+function addMessage(msg) {
+  return {
+    type: ADD,
+    message: msg
+  };
+};
+
+//reducer, adds a message to the array of messages held in state, or returns the current state
+const messageReducer = (state = defaultState, action) => {
+  switch(action.type){
+     case ADD: return [...state, action.message]; // This comma should be a semicolon
+   break;
+     default: return state
+  
+  };
+  
+};
+
+//Redux store
+const store = Redux.createStore(messageReducer);
+```
