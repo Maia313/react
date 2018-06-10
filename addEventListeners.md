@@ -1,6 +1,6 @@
 
 The `componentDidMount()` method is also the best place to attach any event listeners you need to add for specific functionality.
-React provides a synthetic event system which wraps the native event system present in browsers. 
+React provides `a synthetic event system` which wraps the native event system present in browsers. 
 This means that the synthetic event system behaves exactly the same regardless of the user's browser - even if 
 the native events may behave differently between different browsers.
 
