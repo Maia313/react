@@ -6,7 +6,7 @@ To use this method, pass in the functions as arguments, and immediately call the
 
 `connect(mapStateToProps, mapDispatchToProps)(MyComponent)`
 
-Note: If you want to omit one of the arguments to the connect method, you pass null in its place.
+**Note**: If you want to omit one of the arguments to the connect method, you pass null in its place.
 
 
 The code editor has the `mapStateToProps()` and `mapDispatchToProps()` functions and a new React component called Presentational. Connect this component to Redux with the connect method from the ReactRedux global object, and call it immediately on the Presentational component. Assign the result to a new const called ConnectedComponent that represents the connected component. That's it, now you're connected to Redux! Try changing either of connect's arguments to null and observe the test results.
