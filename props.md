@@ -3,11 +3,10 @@
 1. `Rendering JSX vs React components`
 2. `Props`
 3. `Pass an Array as Props`
-4. `Recognize child parent components`
-5. `Default props`
-6. `Override default props`
-7. `PropTypes`
-8. `Access Props Using this.props`
+4. `Default props`
+5. `Override default props`
+6. `PropTypes`
+7. `Access Props Using this.props`
 
 ### Rendering JSX vs React components
 
@@ -59,15 +58,6 @@ This will join all colors array items into a comma separated string and produce:
 ```
 Later, we will learn about other common methods to render arrays of data in React.
 
-### Recognize child parent components
-```js
-const ChildComponent = (props) => <p>{props.colors.join(', ')}</p>
-```
-```js
-<ParentComponent>
-<ChildComponent colors={["green", "blue", "red"]} />
-</ParentComponent>
-```
 
 ```js
 const List= (props) => {
@@ -98,11 +88,7 @@ class ToDo extends React.Component {
 
 ### Default props
 
-React also has an option to set `default props`. You can assign default props to a component as a property on the 
-component itself and React assigns the default prop if necessary. This allows you to specify what a prop value should be if
-no value is explicitly provided. For example, if you declare `MyComponent.defaultProps = { location: 'San Francisco' }`, 
-you have defined a location prop that's set to the string San Francisco, unless you specify otherwise. 
-React assigns default props if props are `undefined`, but if you pass `null` as the value for a prop, it will remain `null`.
+You can assign `default props` to a component as a property on the component itself and React assigns the default prop if necessary. This allows you to specify what a prop value should be if no value is explicitly provided. For example, if you declare `MyComponent.defaultProps = { location: 'San Francisco' }`, you have defined a location prop that's set to the string San Francisco, unless you specify otherwise. React assigns default props if props are `undefined`, but if you pass `null` as the value for a prop, it will remain `null`.
 
 ### Override default props
 ```js
