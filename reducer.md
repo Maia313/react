@@ -5,7 +5,7 @@ When the state of your app begins to grow more complex, it may be tempting to di
 
 In order to let us combine multiple reducers together, Redux provides the `combineReducers()` method. This method accepts an object as an argument in which you define properties which associate keys to specific reducer functions. The name you give to the keys will be used by Redux as the name for the associated piece of state.
 
-Typically, it is a good practice to create a reducer for each piece of application state when they are distinct or unique in some way. For example, in a note-taking app with user authentication, one reducer could handle authentication while another handles the text and notes that the user is submitting. For such an application, we might write the combineReducers() method like this:
+Typically, `it is a good practice to create a reducer for each piece of application state when they are distinct or unique in some way`. For example, in a note-taking app with user authentication, one reducer could handle authentication while another handles the text and notes that the user is submitting. For such an application, we might write the combineReducers() method like this:
 ```js
 const rootReducer = Redux.combineReducers({
 auth: authenticationReducer,
@@ -57,7 +57,7 @@ const store = Redux.createStore(rootReducer);
 
 ### Send Action Data to the Store
 
-By now you've learned how to dispatch actions to the Redux store, but so far these actions have not contained any information other than a type. You can also send specific data along with your actions. In fact, this is very common because actions usually originate from some user interaction and tend to carry some data with them. The Redux store often needs to know about this data.
+By now you've learned how `to dispatch actions to the Redux store`, but so far these actions have not contained any information other than a type. You can also send specific data along with your actions. In fact, this is very common because actions usually originate from some user interaction and tend to carry some data with them. The Redux store often needs to know about this data.
 
 ```js
 const ADD_NOTE = 'ADD_NOTE';
