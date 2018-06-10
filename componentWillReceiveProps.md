@@ -1,5 +1,5 @@
 
-```
+```js
 class Dialog extends React.Component {
   constructor(props) {
     super(props);
