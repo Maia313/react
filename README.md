@@ -4,9 +4,9 @@
 2. `Create components:2 ways`
 3. `Parent-child relationship`
 
-React uses a syntax extension of JavaScript called `JSX` that allows you to write HTML directly within JavaScript.
+`JSX` a syntax extension of JavaScript, that allows you to write HTML directly within JavaScript.
 
-Because `JSX` is a syntactic extension of JavaScript, you can actually write JavaScript directly within `JSX`. To do this, you simply include the code you want to be treated as JavaScript within curly braces: `{ 'this is treated as JavaScript code' }`. Keep this in mind, since it's used in several future challenges.
+Because `JSX` is a syntactic extension of JavaScript, you can actually write JavaScript directly within `JSX`. Simply include the code you want to be treated as JavaScript within curly braces: `{ 'this is treated as JavaScript code' }`. 
 
 `JSX` is compiled using `Babel` as a transpiler
 
@@ -26,17 +26,20 @@ const JSX = (
 
 ### Render HTML elements to the DOM
 
-So far, you've learned that `JSX` is a convenient tool to write readable HTML within JavaScript. With React, we can render this `JSX` directly to the HTML DOM using React's rendering API known as `ReactDOM`.
+`JSX` can be rendered directly to the HTML DOM using React's rendering API known as `ReactDOM`.
 
-`ReactDOM` offers a simple method to render React elements to the DOM which looks like this: `ReactDOM.render(componentToRender, targetNode)`, where the first argument is the React element or component that you want to render, and the second argument is the DOM node that you want to render the component to.
+`ReactDOM` offers a simple method to render React elements to the DOM which looks like this: `ReactDOM.render(componentToRender, targetNode)`, where the first argument is the **React element or component** that you want to render, and the second argument is the DOM node that you want to render the component to.
 
-As you would expect, `ReactDOM.render()` must be called after the JSX element declarations, just like how you must declare variables before using them.
+`ReactDOM.render()` must be called after the JSX element declarations.
 
 ### Create components
 
-There are **two ways** to create a *React component*. **The first way** is to **use a JavaScript function**. *Defining a component in this way creates a stateless functional component.* The concept of state in an application will be covered in later challenges. For now, think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data. (We'll cover the second way to create a React component in the next challenge.)
+There are **two ways** to create a *React component*:
 
-To create a component with a function, you simply write a JavaScript function that returns either `JSX` or `null`. One important thing to note is that React requires your function name to begin with a capital letter. Here's an example of a stateless functional component that assigns an HTML class in JSX:
+**The first way** is to **use a JavaScript function**. 
+*Defining a component in this way creates a **stateless** functional component.* For now, think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data. 
+
+To create a component with a function, you simply write a JavaScript function that returns either `JSX` or `null`. One important thing to note is that React requires your function name to begin with a capital letter. Here's an example of a **stateless functional component** that assigns an HTML class in JSX:
 
 ```js
 // After being transpiled, the <div> will have a CSS class of 'customClass'
@@ -67,7 +70,7 @@ class Kitten extends React.Component {
 
 This creates an ES6 class Kitten which extends the `React.Component` class. So the `Kitten` class now has access to many useful React features, such as local state and lifecycle hooks. Don't worry if you aren't familiar with these terms yet, they will be covered in greater detail in later challenges.
 
-Also notice the Kitten class has a constructor defined within it that calls `super()`. It uses `super()` to call the constructor of the parent class, in this case `React.Component`. The constructor is a special method used during the initialization of objects that are created with the class keyword. `It is best practice to call a component's constructor with super, and pass props to both.` This makes sure the component is initialized properly. For now, know that it is standard for this code to be included. Soon you will see other uses for the constructor as well as props.
+Also notice the Kitten class has a constructor defined within it that calls `super()`. It uses `super()` to call the constructor of the parent class, in this case `React.Component`. The constructor is a special method used during the initialization of objects that are created with the class keyword. `It is best practice to call a component's constructor with super, and pass props to both.` This makes sure the component is initialized properly. 
 
 ### Parent-child relationship
 
@@ -112,12 +115,12 @@ class ParentComponent extends React.Component {
 ```
 
 
-* Curly braces, { } are used
-  + to access props,
-  + to pass props, 
-  + to access state, 
-  + to insert comments into code,
-  + and style components.
+### Curly braces, { } are used
+  + `to access props`,
+  + `to pass props`, 
+  + `to access state`, 
+  + `to insert comments into code`,
+  + `to style components`.
 
 
 
