@@ -2,6 +2,8 @@
 2. `Stateful components`
 3. `this.setState`
 
+When you want to aggregate data from multiple children or to have two child components communicate with each other, **move the state upwards** so that it lives in the parent component. The parent can then pass the state back down to the children via props, so that the child components are always in sync with each other and with the parent.
+
 ### Stateless Functional Components
 
 Except for the last challenge, you've been passing props to `stateless functional components`. These components `act like pure functions`. They `accept props as input and return the same view every time they are passed the same props`. 
