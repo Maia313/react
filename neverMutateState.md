@@ -2,6 +2,16 @@
 ### Imutability
 
 There are generally two ways for changing data. The **first method** is to **mutate** the data by directly changing the values of a variable. The **second method** is to **replace** the data with a new copy of the object that also includes desired changes.
+`Data change with mutation`
+```js
+var player = {score: 1, name: 'Jeff'};
+player.score = 2;
+```
+`Data change without mutation`
+```js
+var player = {score: 1, name: 'Jeff'};
+var newPlayer = Object.assign({}, player, {score: 2});
+```
 
 `Immutable state` means that you never modify state directly, instead, you return a new copy of state.
 
