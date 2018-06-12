@@ -11,7 +11,7 @@
 ### Rendering JSX vs React components
 
 * JSX .....................ReactDOM.render(componentToRender, targetNode)
-* React components ........ReactDOM.render('<ComponentToRender />', targetNode)
+* React components ........ReactDOM.render(ComponentToRender, targetNode)
 
 ### Props
 
