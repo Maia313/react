@@ -1,5 +1,8 @@
 ### Unidirectional dataflow & separating state logic from UI logic
 
+#### But the child component can’t modify its props. `this.props` is immutable.
+**While the child can read its props, it can’t modify them. A child does not own its props. In our app, the parent component owns the props given to child. React favors the idea of one-way data flow. This means that data changes come from the “top” of the app and are propagated “downwards” through its various components.**
+
 `Props` are passed to `child JSX elements` and `child React components`.*You may be wondering where those props come from*. 
 `A common pattern` is to have `a stateful component containing the state important to your app, that then renders child components`. *You want these components to have access to some pieces of that state, which are passed in as props*.
 
