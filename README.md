@@ -26,11 +26,21 @@ If steps in this process aren’t completely clear right now, don’t worry. The
 (2) Using the React.createClass() method
 **An example of using an ES6 class**:
 ```js
-class HelloWorld extends React.Component { render() { return(<p>Hello, world!</p>) }
+class HelloWorld extends React.Component { 
+  render() { 
+    return(
+      <p>Hello, world!</p>
+    ) 
+  }
 }
 ```
 ```js
-const HelloWorld = React.createClass({ render() { return(<p>Hello, world!</p>) }
+const HelloWorld = React.createClass({ 
+  render() {
+    return(
+      <p>Hello, world!</p>
+    ) 
+  }
 })
 ```
 **The same component written using the createClass function from the React library**:
