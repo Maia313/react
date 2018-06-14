@@ -21,6 +21,19 @@ We defined the handleUpVote function in ProductList and passed it down in props 
 We did not add a server component to our last app, but we will be doing so in this one.
 If steps in this process aren’t completely clear right now, don’t worry. The purpose of this chapter is to familiarize yourself with this procedure.
 
+**There are two ways to declare React components**: 
+(1) As ES6 classes (as above)
+(2) Using the React.createClass() method
+**An example of using an ES6 class**:
+```js
+class HelloWorld extends React.Component { render() { return(<p>Hello, world!</p>) }
+}
+```
+```js
+const HelloWorld = React.createClass({ render() { return(<p>Hello, world!</p>) }
+})
+```
+**The same component written using the createClass function from the React library**:
 
 `JSX` a syntax extension of JavaScript, that allows you to write HTML directly within JavaScript.
 
