@@ -14,12 +14,12 @@ For simplicity, we want to strive to represent state with as few data points as 
 When you want to aggregate data from multiple children or to have two child components communicate with each other, **move the state upwards** so that it lives in the parent component. The parent can then pass the state back down to the children via props, so that the child components are always in sync with each other and with the parent.
 
 #### For each piece of state:
-• Identify every component that renders something based on that state.
-• Findacommonownercomponent(asinglecomponentaboveallthecomponents
++ Identify every component that renders something based on that state.
++ Find a common owner component(a single component above all the components
 that need the state in the hierarchy).
-• Either the common owner or another component higher up in the hierarchy
++ Either the common owner or another component higher up in the hierarchy
 should own the state.
-• Ifyoucan’tfindacomponentwhereitmakessensetoownthestate,createanew
++ If you can’t find a component where it makes sense to own the state, create a new
 component simply for holding the state and add it somewhere in the hierarchy above the common owner component.
 
 
