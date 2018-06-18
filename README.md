@@ -27,8 +27,7 @@ We did not add a server component to our last app, but we will be doing so in th
 If steps in this process aren’t completely clear right now, don’t worry. The purpose of this chapter is to familiarize yourself with this procedure.
 
 **There are two ways to declare React components**: 
-(1) As ES6 classes (as above)
-(2) Using the React.createClass() method
+
 **An example of using an ES6 class**:
 ```js
 class HelloWorld extends React.Component { 
@@ -39,6 +38,7 @@ class HelloWorld extends React.Component {
   }
 }
 ```
+**Using the React.createClass() method**
 ```js
 const HelloWorld = React.createClass({ 
   render() {
@@ -48,11 +48,11 @@ const HelloWorld = React.createClass({
   }
 })
 ```
-**The same component written using the createClass function from the React library**:
+
 
 `JSX` a syntax extension of JavaScript, that allows you to write HTML directly within JavaScript.
 
-Because `JSX` is a syntactic extension of JavaScript, you can actually write JavaScript directly within `JSX`. Simply include the code you want to be treated as JavaScript within curly braces: `{ 'this is treated as JavaScript code' }`. 
+Because `JSX` is a syntactic extension of JavaScript, you write JavaScript directly within `JSX`, by including the code you want to be treated as JavaScript within curly braces: `{ 'this is treated as JavaScript code' }`. 
 
 `JSX` is compiled using `Babel` as a transpiler
 
@@ -96,8 +96,6 @@ return (
 };
 ```
 
-Because a `JSX` component represents HTML, you could put several components together to create a more complex HTML page. This is one of the key advantages of the component architecture React provides. It allows you to compose your UI from many separate, isolated components. This makes it easier to build and maintain complex user interfaces.
-
 The **second way** to define a React component is with the **ES6 class syntax**. In the following example, Kitten extends `React.Component`:
 
 ```js
@@ -127,9 +125,9 @@ To compose these components together, you could create an App parent component w
 ```js
 return (
 <App>
-<Navbar />
-<Dashboard />
-<Footer />
+  <Navbar />
+  <Dashboard />
+  <Footer />
 </App>
 )
 ```
