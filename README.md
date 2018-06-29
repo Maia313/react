@@ -49,6 +49,7 @@ const HelloWorld = React.createClass({
 })
 ```
 
+>Class Components differ from Functional Components because they allow React Components to have life cycle methods and state. >Class components have two instance properties, this.state and this.props, that represent the component's state and properties >respectively.
 
 `JSX` a syntax extension of JavaScript, that allows you to write HTML directly within JavaScript.
 
