@@ -74,7 +74,7 @@ const JSX = (
 
 `JSX` can be rendered directly to the HTML DOM using React's rendering API known as `ReactDOM`.
 
-`ReactDOM` offers a simple method to render React elements to the DOM which looks like this: `ReactDOM.render(componentToRender, targetNode)`, where the first argument is the **React element or component** that you want to render, and the second argument is the DOM node that you want to render the component to.
+`ReactDOM.render(componentToRender, targetNode)`, where the first argument is the **React element or component** that you want to render, and the second argument is the DOM node that you want to render the component to.
 
 `ReactDOM.render()` must be called after the JSX element declarations.
 
