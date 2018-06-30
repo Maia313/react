@@ -42,7 +42,7 @@ The **`updating phase`** begins when a component's properties or state changes. 
 
 > Unmounting Phase Methods
 
-The unmounting phase begins when a component is being removed from the DOM. The following life cycle method occurs during the unmounting phase:
+The **`unmounting phase`** begins when a component is being removed from the DOM. The following life cycle method occurs during the unmounting phase:
 
     + componentWillUnmount() - called immediately before a component unmounts. This is where any cleanups are made such as cancelling timers or network requests.
 
