@@ -23,7 +23,7 @@ Each Class Component goes through a component life cycle with multiple phases.
 
 > Mounting Phase Methods
 
-The mounting phase begins when an instance of a component is created and rendered into the DOM. The following lifecycle methods occur in the order they are listed:
+The `mounting phase` begins when an instance of a component is created and rendered into the DOM. The following lifecycle methods occur in the order they are listed:
 
     + constructor(props) - called when the component is first initialized. This method is only called once.
     + componentWillMount() - called when a component is about to mount.
@@ -32,7 +32,7 @@ The mounting phase begins when an instance of a component is created and rendere
 
 > Updating Phase Methods
 
-The updating phase begins when a component's properties or state changes. The following lifecycle methods occur in the order they are listed:
+The `updating phase` begins when a component's properties or state changes. The following lifecycle methods occur in the order they are listed:
 
     + componentWillReceiveProps(nextProps) - called when a component has updated and is receiving new props.
     + shouldComponentUpdate(nextProps, nextState) - called after receiving props and is about to update. If this method returns false, componentWillUpdate(), render(), and componentDidUpdate() will not execute.
