@@ -1,7 +1,7 @@
 
-### Controlled Components
+#### Controlled Components
 
-#### Controlling input fields
+##### Controlling input fields
 ```js
 class ControlledInput extends React.Component{
 
@@ -20,7 +20,7 @@ class ControlledInput extends React.Component{
     }
 }
 ```
-#### Controlling Checkboxes
+##### Controlling Checkboxes
 ```js
 class ControlledInput extends React.Component{
 
@@ -39,7 +39,7 @@ class ControlledInput extends React.Component{
     }
 }
 ```
-#### Controlling TextArea fields
+##### Controlling TextArea fields
 
 ```js
 class ControlledTextArea extends React.Component{
@@ -59,7 +59,7 @@ class ControlledTextArea extends React.Component{
     }
 }
 ```
-#### Controlling select tags
+##### Controlling select tags
 ```js
 class ControlledSelect extends React.Component{
 
@@ -109,7 +109,7 @@ class ControlledSelect extends React.Component{
 }
 ```
 
-#### Handling Multiple Inputs
+##### Handling Multiple Inputs
 
 ```js
 class ControlledMultiple extends React.Component{
