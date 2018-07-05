@@ -3,7 +3,7 @@
 
 ### React.createElement() function accepts three arguments:
 1. `The DOM element type`
-2. `Theelementprops`
+2. `The element props`
 3. `The children of the element`
 
 ### Stateless component
