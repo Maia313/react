@@ -1,4 +1,4 @@
-![Markdown Logo](https://img.shields.io/badge/react-js-blue.svg)
+![React](https://img.shields.io/badge/React-js-blue.svg)
 
 ### Core fundamentals:
 1. `We think about and organize our React apps as components`
