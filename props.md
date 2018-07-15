@@ -31,9 +31,7 @@ Since Welcome is a stateless functional component, it has access to this value l
 ```js
 const Welcome = (props) => <h1>Hello, {props.user}!</h1>
 ```
-It is standard to call this value `props` and when dealing with stateless functional components, you basically consider 
-it as an argument to a function which returns `JSX`. You can access the value of the argument in the function body. 
-With class components, you will see this is a little different.
+
 
 ### Pass an Array as Props
 
