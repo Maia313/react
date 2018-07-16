@@ -25,7 +25,7 @@ We defined the handleUpVote function in ProductList and passed it down in props 
 We did not add a server component to our last app, but we will be doing so in this one.
 If steps in this process aren’t completely clear right now, don’t worry. The purpose of this chapter is to familiarize yourself with this procedure.
 
-**There are two ways to declare React components**: 
+**There are 2 ways to declare React components**: 
 
 **An example of using an ES6 class**:
 ```js
