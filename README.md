@@ -1,7 +1,7 @@
 
 ### Core fundamentals:
 1. `We think about and organize our React apps as components`
-2. `Using JSX inside the render method`
+2. `Using JSX inside the render method` instead of React.createElement
 3. `Data flows from parent to children through props`
 4. `Event flows from children to parent through functions`
 5. `Utilizing React lifecycle methods`
