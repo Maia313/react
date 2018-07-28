@@ -27,7 +27,7 @@ If steps in this process aren’t completely clear right now, don’t worry. The
 
 **There are 2 ways to declare React components**: 
 
-**An example of using an ES6 class**:
+**ES6 class**:
 ```js
 class HelloWorld extends React.Component { 
   render() { 
@@ -37,7 +37,7 @@ class HelloWorld extends React.Component {
   }
 }
 ```
-**Using the React.createClass() method**
+**React.createClass()**
 ```js
 const HelloWorld = React.createClass({ 
   render() {
