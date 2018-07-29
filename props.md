@@ -159,8 +159,6 @@ class ShoppingCart extends React.Component {
 
 ### Access Props Using this.props
 
-The last several challenges covered the basic ways to pass `props` to child components. But what if the child component 
-that you're passing a prop to is an `ES6 class component`, rather than a `stateless functional component`? 
 The ES6 class component uses a slightly different convention to access props.
 
 Anytime you refer to a class component within itself, you use the `this` keyword. To access props within a class component, 
