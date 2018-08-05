@@ -21,7 +21,7 @@ var MyFirstComponent = function() {
         );
 ```
 
-**Props** --- **variables** that you pass **from the parent to the child** but the child cannot modify the props it gets.
+**Props** --- **variables** that you pass **from the parent to the child** but the child cannot modify.
 
 ```js
 var ce = React.createElement;
