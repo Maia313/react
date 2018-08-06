@@ -15,7 +15,7 @@
 
 ### Props
 
-Another feature very common in React: `props`. `In React, you can pass props, or properties, to child components`. 
+`In React, you can pass props, or properties, to child components`. 
 Say you have an App component which renders a child component called Welcome that is a stateless functional component. 
 You can pass Welcome a user property by writing:
 
