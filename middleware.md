@@ -8,7 +8,7 @@ Take a look at the code at the bottom of the editor to see this.
 Then, to create an asynchronous action, you return a function in the action creator that takes dispatch as an argument.
 Within this function, you can dispatch actions and perform asynchronous requests.
 
-In the example, an asynchronous request is simulated with a `setTimeout()` call. It's common to dispatch an action before initiating any asynchronous behavior so that your application state knows that some data is being requested (this state could display a loading icon, for instance). Then, once you receive the data, you dispatch another action which carries the data as a payload along with information that the action is completed.
+In the example, an asynchronous request is simulated with a `setTimeout()` call. It's common to dispatch an action before initiating any asynchronous behavior so that your application state knows that some data is being requested. Then, once you receive the data, you dispatch another action which carries the data as a payload along with information that the action is completed.
 
 Remember that you're passing dispatch as a parameter to this special action creator. This is what you'll use to dispatch your actions, you simply pass the action directly to dispatch and the middleware takes care of the rest.
 
