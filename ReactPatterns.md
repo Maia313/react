@@ -1,9 +1,9 @@
 # Patterns in React
 > Some examples of patterns to use in React
 
-* [#Conditional Rendering](#conditional-rendering)
-* [#Rendering multiple components](#rendering-multiple-components)
-* [#Composition](#composition)
+* [# Conditional Rendering](#conditional-rendering)
+* [# Rendering multiple components](#rendering-multiple-components)
+* [# Composition](#composition)
 
 ## Conditional rendering
 
