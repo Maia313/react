@@ -5,9 +5,9 @@
 * [# Rendering multiple components](#rendering-multiple-components)
 * [# Composition](#composition)
 
-## Conditional rendering
+### Conditional rendering
 
-### Traditional `if`
+#### Traditional `if`
 
 ```jsx
 export default function ToggleDiv({ visible }){
@@ -18,7 +18,7 @@ export default function ToggleDiv({ visible }){
 }
 ```
 
-### Ternary Operator
+#### Ternary Operator
 
 ```jsx
 export default function ToggleDiv({ visible }){
@@ -38,7 +38,7 @@ export default function ToggleDiv({ visible }){
 }
 ```
 
-### `&&` Operator
+#### `&&` Operator
 
 ```jsx
 export default function ToggleDiv({ visible }){
