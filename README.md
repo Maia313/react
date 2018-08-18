@@ -57,8 +57,6 @@ Because `JSX` is a syntactic extension of JavaScript, you write JavaScript direc
 
 **One important thing to know about nested JSX is that it must return a single element.**
 
-This one parent element would wrap all of the other levels of nested elements.
-
 Comments in JSX {/* */} 
 ```js
 const JSX = (
