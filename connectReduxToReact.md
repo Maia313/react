@@ -4,7 +4,8 @@ Now that you've written both the `mapStateToProps(state)` and the `mapDispatchTo
 
 To use this method, pass in the functions as arguments, and immediately call the result with your component. This syntax is a little unusual and looks like:
 
-`connect(mapStateToProps, mapDispatchToProps)(MyComponent)`
+`connect(mapStateToProps, mapDispatchToProps)(MyComponent)` or
+`ReactRedux.connect(mapStateToProps, mapDispatchToProps)(MyComponent)`
 
 **Note**: If you want to omit one of the arguments to the connect method, you pass null in its place.
 
