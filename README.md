@@ -10,7 +10,7 @@
 
 **A handy framework for developing a React app from scratch**:
 1. `Break the app into components`
-We looked at the desired UI and determined we wanted ProductList and Product components.
+We looked at the desired UI and determined we wanted _ProductList_ and _Product components_.
 2. `Build a static version of the app`
 Our components started off without using state. Instead, we had ProductList pass down static props to Product.
 3. `Determine what should be stateful`
