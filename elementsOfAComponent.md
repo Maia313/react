@@ -1,7 +1,7 @@
 
 `Webpack's` core features: `module compilation` and the `ability to plug in loaders`.
 
-### React.createElement() function accepts three arguments:
+### React.createElement() function accepts 3 arguments:
 1. `The DOM element type`
 2. `The element props`
 3. `The children of the element`
