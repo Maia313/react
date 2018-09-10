@@ -160,7 +160,7 @@ class ControlledSelect extends React.Component{
     }
 }
 ```
-Select Components can also have their options dynamically generated using the map() method.
+##### Select Components can also have their options dynamically generated using the map() method.
 ```js
 class ControlledSelect extends React.Component{
 
