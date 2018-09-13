@@ -64,9 +64,7 @@ class MyForm extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          { /* change code below this line */ }
           <input value={this.state.input} onChange={this.handleChange} />
-          { /* change code above this line */ }
           <button type='submit'>Submit!</button>
         </form>
       
