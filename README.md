@@ -28,7 +28,7 @@ If steps in this process aren’t completely clear right now, don’t worry. The
 > fn(d) = V. Your UI is a function of your state and props are to components what arguments are to functions.
 > Instead of your function taking in some arguments and returning a value, your function is going to take in some arguments  and return an object representation of your UI. 
 
-**There are 2 ways to declare React components**: 
+**There are `2` ways to declare React components**: 
 
 **ES6 class**:
 ```js
