@@ -1,4 +1,4 @@
-### Use the Lifecycle Method 
+## Use the Lifecycle Method 
 
 React components have several special methods that provide opportunities to perform actions at specific points 
 in the lifecycle of a component. These are called `lifecycle methods`, or lifecycle hooks, and allow you to catch components 
