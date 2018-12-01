@@ -4,19 +4,23 @@ React components have several special methods that provide opportunities to perf
 in the lifecycle of a component. These are called `lifecycle methods`, or lifecycle hooks, and allow you to catch components 
 at certain points in time. This can be **before they are rendered**, **before they update**, **before they receive props**, **before they unmount**, and so on. Here is a list of some of the main lifecycle methods:
 
-* **`componentWillMount()`**
+* **`componentWillMount()`** deprecated
 
 * **`componentDidMount()`**
 
-* **`componentWillReceiveProps()`**
+* **`componentWillReceiveProps()`** deprecated
 
 * **`shouldComponentUpdate()`**
 
-* **`componentWillUpdate()`**
+* **`componentWillUpdate()`** deprecated
 
 * **`componentDidUpdate()`**
 
 * **`componentWillUnmount()`**
+
+* **` static getDerivedStateFromProps()`**
+
+* **` getSnapshotBeforeUpdate()`**
 
 
 Each Class Component goes through a component life cycle with multiple phases. 
