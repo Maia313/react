@@ -13,7 +13,7 @@
   export default Counter
 ```
 
-* Custom hook
+* **Custom hook**
 ```js
 import React, {useState} from 'react'
 
