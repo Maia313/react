@@ -1,6 +1,6 @@
 ## The core principles of Redux
 
-```
+```js
 const createStore = (reducer, initialState) => {
   let currentState = initialState;
   const subscribeFns = [];
