@@ -14,6 +14,7 @@ const createStore = (reducer, initialState) => {
     subscribe: cb => {
       subscribeFns.push(cb);
     }
+  }
 }
 
 1. `Create actions and action creators`, 
