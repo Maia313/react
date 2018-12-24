@@ -16,6 +16,7 @@ const createStore = (reducer, initialState) => {
     }
   }
 }
+}
 
 1. `Create actions and action creators`, 
 2. `Create a Redux store`, 
