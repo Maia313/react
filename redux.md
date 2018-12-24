@@ -1,5 +1,21 @@
 ## The core principles of Redux
 
+```
+const createStore = (reducer, initialState) => {
+  let currentState = initialState;
+  const subscribeFns = [];
+  
+  return {
+    getState: () => currentState,
+    dispatch: action => {
+      currentState = reducer(currentState, action);
+      subscribeFns.forEach(cb => cb());  
+    },
+    subscribe: cb => {
+      subscribeFns.push(cb);
+    }
+}
+
 1. `Create actions and action creators`, 
 2. `Create a Redux store`, 
 3. `Dispatch your actions against the store`,
