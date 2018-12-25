@@ -1,6 +1,8 @@
 ## The core principles of Redux
 
 ```js
+
+// store custom implementation
 const createStore = (reducer, initialState) => {
   let currentState = initialState;
   const subscribeFns = [];
