@@ -1,9 +1,3 @@
-## The core principles of Redux
-
-In Redux, there is **a single state object that's responsible for the entire state of your application**. This means if you had a React app with ten components, and each component had its own local state, the entire state of your app would be defined by a single state object housed in the `Redux store`. This is the **first important principle to understand when learning Redux**: `the Redux store is the single source of truth when it comes to application state`.
-
-The **Redux store** is an object which holds and manages application state. There is a method called **createStore()** on the Redux object, which you use to create the **Redux store**. This method takes a **reducer function** as a required argument. The reducer function simply takes state as an argument and returns state.
-
 ```js
 
 // store custom implementation
@@ -23,13 +17,13 @@ const createStore = (reducer, initialState) => {
   }
 }
 ```
+## The core principles of Redux
 
-1. `Create actions and action creators`, 
-2. `Create a Redux store`, 
-3. `Dispatch your actions against the store`,
-4. `Design state updates with pure reducers`, 
-5. `Manage complex state with reducer composition`,
-6. `Handle asynchronous actions`. 
+**first principle**: `the Redux store is the single source of truth when it comes to application state`.
+**second principle**: `state is read-only`.
+**third principle**: `changes are made with pure functions`.
+
+There is a method called **createStore()** on the Redux object, which you use to create the **Redux store**. This method takes a **reducer function** as a required argument. The reducer function simply takes state as an argument and returns state.
 
 
 
