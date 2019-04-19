@@ -107,7 +107,7 @@ export default function List({ arrayOfItems }) {
 
 ```
 
-# Composition
+### Composition
 
 React gives us multiple ways to organize our components and sending them down the props-chain. Examples are mainly taken from this source:
 
