@@ -1,5 +1,17 @@
 
-**`Regular expressions`** are used in programming languages to match parts of strings. You create patterns to help you do that matching.
+**`Regular expressions`** 
+
+* [# Match literal strings](#match-literal-strings)
+* [# Ignore case](#ignore-case)
+* [# Extract matches](#extract-matches)
+* [# The wildcard character](#the-wildcard-character)
+* [# Character classes](#character-classes)
+* [# Match letters of the alphabet](#match-letters-of-the-alphabet)
+* [# Match both numbers and letters](#match-both-numbers-and-letters)
+* [# Match single characters](#match-single-characters)
+* [# Match characters that occur one or more times](#match-characters-that-occur-one-or-more-times)
+* [# Match characters that occur zero or more times](#match-characters-that-occur-zero-or-more-times)
+* [# Lazy matching](#lazy-matching)
 
 If you want to find the word "the" in the string "The dog chased the cat", you could use the following regular expression: `/the/`. Notice that quote marks are not required within the regular expression.
 
