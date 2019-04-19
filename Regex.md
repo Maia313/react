@@ -12,6 +12,22 @@
 * [# Match characters that occur one or more times](#match-characters-that-occur-one-or-more-times)
 * [# Match characters that occur zero or more times](#match-characters-that-occur-zero-or-more-times)
 * [# Lazy matching](#lazy-matching)
+* [# Match beginning string patterns](#match-beginning-string-patterns)
+* [# Match ending string patterns](#match-ending-string-patterns)
+* [# Match all letters and numbers](#match-all-letters-and-numbers)
+* [# Match everything but letters and numbers](#match-everything-but-letters-and-numbers)
+* [# Match all numbers](#match-all-numbers)
+* [# Match non-numbers](#match-non-numbers)
+* [# Restrict possible usernames](#restrict-possible-usernames)
+* [# Match whitespace](#match-whitespace)
+* [# Match non-white space](#match-non-whitespace)
+* [# Specify upper and lower number of matches](#specify-upper-and-lower-number-of-matches)
+* [# Specify only the lower number of matches](#specify-only-the-lower-number-of-matches)
+* [# Specify exact number of matches](#specify-exact-number-of-matches)
+* [# Check all or none](#check-all-or-none)
+* [# Positive and negative lookahead](#positive-and-negative-lookahead)
+* [# Capture groups](#capture-groups)
+* [# Search and replace](#search-and-replace)
 
 If you want to find the word "the" in the string "The dog chased the cat", you could use the following regular expression: `/the/`. Notice that quote marks are not required within the regular expression.
 
@@ -307,7 +323,7 @@ For example, to match only the letter a appearing between 3 and 5 times in the s
     multipleA.test(A2); // Returns false
 ```
 ----
-### Spceify only the lower number of matches
+### Specify only the lower number of matches
 
 Sometimes you only want to specify the lower number of patterns with no upper limit.
 
