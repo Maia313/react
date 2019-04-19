@@ -23,6 +23,8 @@ const createStore = (reducer, initialState) => {
 **second principle**: `state is read-only`.
 **third principle**: `changes are made with pure functions`.
 
+
+
 There is a method called **createStore()** on the Redux object, which you use to create the **Redux store**. This method takes a **reducer function** as a required argument. The reducer function simply takes state as an argument and returns state.
 
 
