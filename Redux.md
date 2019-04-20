@@ -25,6 +25,7 @@ const createStore = (reducer, initialState) => {
 
 
 
+
 There is a method called **createStore()** on the Redux object, which you use to create the **Redux store**. This method takes a **reducer function** as a required argument. The reducer function simply takes state as an argument and returns state.
 
 
@@ -44,19 +45,7 @@ Since Redux is a **state management framework**, `updating state` is one of **it
 
 Think of Redux actions as messengers that deliver information about events happening in your app to the Redux store. The store then conducts the business of updating state based on the action that occurred.
 
-### Define an Action Creator
 
-After creating an action, the next step is sending the action to the Redux store so it can update its state. In Redux, you define action creators to accomplish this. An action creator is simply a JavaScript function that returns an action. In other words, action creators create objects that represent action events.
-
-```js
-const action = {
-  type: 'LOGIN'
-}
-// Define an action creator here:
-function actionCreator(){
-  return action;
-}
-```
 
 ### Dispatch an Action Event
 
