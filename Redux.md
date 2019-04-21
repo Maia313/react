@@ -63,6 +63,23 @@ const createStore = (reducer, initialState) => {
 
     export default rootReducer;
   ```
+  
+  ##### configure store
+
+  ```js
+  import {createStore} from 'redux';
+  import rootReducer from './reducers';
+
+
+  export default function configureStore(initialState) {
+    return createStore(
+      rootReducer,
+      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+      initialState
+    );
+  }
+```
+
 2. Configure React:
 
   ##### import provider in app or index.js
