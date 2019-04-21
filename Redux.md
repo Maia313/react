@@ -30,6 +30,7 @@ const createStore = (reducer, initialState) => {
   
   ```js
     export default function addArticle (article) {
+      //debugger;
         return {
             type: 'ADD_ARTICLE',
             article
@@ -41,6 +42,7 @@ const createStore = (reducer, initialState) => {
     export default function articleReducer(state=[], action){
         switch(action.type){
             case 'ADD_ARTICLE':
+                //debugger;
                 return [...state, {...action.article}]
             default:
                 return state
@@ -107,6 +109,7 @@ const createStore = (reducer, initialState) => {
 
         handleSubmit = (e) => {
             e.preventDefault();
+            //debugger;
             this.setState({ article:{title:''}})
             this.props.actions(this.state.article)
         }
@@ -126,6 +129,7 @@ const createStore = (reducer, initialState) => {
     }
     
     function mapStateToProps(state, ownProps) {
+        //debugger;
         return {
           articles: state.articles
         };
