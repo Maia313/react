@@ -27,14 +27,15 @@ const createStore = (reducer, initialState) => {
 # Connect React to Redux
 1. Configure Redux(in redux folder)
   ##### create actions folder, define actions
-    ```js
+  
+  ```js
     export default function addArticle (article) {
         return {
             type: 'ADD_ARTICLE',
             article
         }
     }
-    ```
+  ```
   ##### create reducer folder, define reducer
     ```js
     export default function articleReducer(state=[], action){
