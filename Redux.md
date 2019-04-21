@@ -35,7 +35,7 @@ const createStore = (reducer, initialState) => {
         }
     }
     ```
-  * create reducer folder, define reducer
+  ##### create reducer folder, define reducer
     ```js
     export default function articleReducer(state=[], action){
         switch(action.type){
@@ -46,7 +46,7 @@ const createStore = (reducer, initialState) => {
         }
     }
     ```
-  * create index.js, define root reducer
+  ##### create index.js, define root reducer
     ```js
     import { combineReducers } from 'redux';
     import articles from './articleReducer';
@@ -80,7 +80,7 @@ const createStore = (reducer, initialState) => {
 
     export default App;
     ```
-  * define component, import connect, define mapStateToProps, mapDispatchToProps
+  ##### define component, import connect, define mapStateToProps, mapDispatchToProps
     ```js
     import React, { Component } from 'react';
     import { bindActionCreators } from 'redux';
