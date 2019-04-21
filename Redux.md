@@ -58,7 +58,7 @@ const createStore = (reducer, initialState) => {
 
     export default rootReducer;
     ```
-1. Configure React:
+2. Configure React:
   * import provider in app or index.js
     ```js
     import React, { Component } from 'react';
