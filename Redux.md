@@ -37,7 +37,7 @@ const createStore = (reducer, initialState) => {
     }
   ```
   ##### create reducer folder, define reducer
-    ```js
+  ```js
     export default function articleReducer(state=[], action){
         switch(action.type){
             case 'ADD_ARTICLE':
@@ -46,9 +46,11 @@ const createStore = (reducer, initialState) => {
                 return state
         }
     }
-    ```
+  ```
+  
   ##### create index.js, define root reducer
-    ```js
+  
+  ```js
     import { combineReducers } from 'redux';
     import articles from './articleReducer';
 
@@ -58,10 +60,11 @@ const createStore = (reducer, initialState) => {
     });
 
     export default rootReducer;
-    ```
+  ```
 2. Configure React:
+
   ##### import provider in app or index.js
-    ```js
+  ```js
     import React, { Component } from 'react';
     import {Provider} from 'react-redux';
     import configureStore from './redux/configureStore'
@@ -80,13 +83,15 @@ const createStore = (reducer, initialState) => {
     }
 
     export default App;
-    ```
+  ```
+  
   ##### define component, import connect, define mapStateToProps, mapDispatchToProps
-    ```js
+  ```js
     import React, { Component } from 'react';
     import { bindActionCreators } from 'redux';
     import {connect} from 'react-redux';
     import articleActions from '../redux/actions/articleActions'
+    import configureStore from '../redux/configureStore';
 
     class ArticlesPage extends Component {
         state = {
@@ -95,15 +100,16 @@ const createStore = (reducer, initialState) => {
             }
         }
 
-    handleChange = (e) => {
-        const article = {...this.state.article, title: e.target.value}
-        this.setState({ article })
-    }
+        handleChange = (e) => {
+            const article = {...this.state.article, title: e.target.value}
+            this.setState({ article })
+        }
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-        this.props.actions(this.state.article)
-    }
+        handleSubmit = (e) => {
+            e.preventDefault();
+            this.setState({ article:{title:''}})
+            this.props.actions(this.state.article)
+        }
 
       render() {
         return (
@@ -111,24 +117,28 @@ const createStore = (reducer, initialState) => {
             <h2>Add article</h2>
             <input type="text" value={this.state.article.title} onChange={this.handleChange}/>
             <input type="submit" value="Add article"/>
-            <div id="newArticle"></div>
+            {this.props.articles.map(article =>
+                <div key={article.title}>{article.title}</div>
+            )}
           </form>
         );
       }
     }
+    
     function mapStateToProps(state, ownProps) {
         return {
-          article: state.article
+          articles: state.articles
         };
       }
-      function mapDispatchToProps(dispatch) {
+      
+    function mapDispatchToProps(dispatch) {
         return {
           actions: bindActionCreators(articleActions, dispatch)
         };
       }
 
     export default  connect(mapStateToProps, mapDispatchToProps)(ArticlesPage)
-    ```
+```
 
 There is a method called **createStore()** on the Redux object, which you use to create the **Redux store**. This method takes a **reducer function** as a required argument. The reducer function simply takes state as an argument and returns state.
 
