@@ -26,7 +26,7 @@ const createStore = (reducer, initialState) => {
 
 # Connect React to Redux
 1. Configure Redux(in redux folder)
-  * create actions folder, define actions
+  ##### create actions folder, define actions
     ```js
     export default function addArticle (article) {
         return {
@@ -40,7 +40,7 @@ const createStore = (reducer, initialState) => {
     export default function articleReducer(state=[], action){
         switch(action.type){
             case 'ADD_ARTICLE':
-                return [...state, {...action.course}]
+                return [...state, {...action.article}]
             default:
                 return state
         }
@@ -59,7 +59,7 @@ const createStore = (reducer, initialState) => {
     export default rootReducer;
     ```
 2. Configure React:
-  * import provider in app or index.js
+  ##### import provider in app or index.js
     ```js
     import React, { Component } from 'react';
     import {Provider} from 'react-redux';
@@ -102,7 +102,6 @@ const createStore = (reducer, initialState) => {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.actions(this.state.article)
-        document.getElementById('newArticle').innerHTML = this.state.article.title
     }
 
       render() {
