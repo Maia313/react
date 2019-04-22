@@ -17,6 +17,17 @@ const createStore = (reducer, initialState) => {
   }
 }
 ```
+
+### Define reducer without switch statement
+```js
+const ACTION_HANDLERS = {}
+
+export default (state=initialState, action) {
+  const HANDLER = ACTION_HANDLERS[action.type]
+  
+  return handler ? handler(state, action) : state;
+}
+```
 ## The core principles of Redux
 
 **first principle**: `the Redux store is the single source of truth when it comes to application state`.
