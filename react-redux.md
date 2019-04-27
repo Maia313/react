@@ -45,9 +45,8 @@ this.setState({
     return (
       <div>
         <h2>Type in a new Message:</h2>
-         
-                                            
-<input value={this.state.input} onChange={this.handleChange}/>
+                        
+        <input value={this.state.input} onChange={this.handleChange}/>
         <button onClick={this.submitMessage}>Submit Me!</button>
         <ul>{items}</ul>
           
