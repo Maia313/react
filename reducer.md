@@ -15,6 +15,37 @@ notes: notesReducer
 Now, the key notes will contain all of the state associated with our notes and handled by our notesReducer. This is how multiple reducers can be composed to manage more complex application state. In this example, the state held in the Redux store would then be a single object containing auth and notes properties.
 
 ```js
+
+// store custom implementation
+const createStore = (reducer, initialState) => {
+  let currentState = initialState;
+  const subscribeFns = [];
+  
+  return {
+    getState: () => currentState,
+    dispatch: action => {
+      currentState = reducer(currentState, action);
+      subscribeFns.forEach(cb => cb());  
+    },
+    subscribe: cb => {
+      subscribeFns.push(cb);
+    }
+  }
+}
+```
+
+### Define reducer without switch statement
+```js
+const ACTION_HANDLERS = {}
+
+export default (state=initialState, action) {
+  const HANDLER = ACTION_HANDLERS[action.type]
+  
+  return handler ? handler(state, action) : state;
+}
+```
+
+```js
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
 
