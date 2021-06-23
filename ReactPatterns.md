@@ -7,46 +7,11 @@
 
 ### Conditional rendering
 
-#### Traditional `if`
-
-```jsx
-export default function ToggleDiv({ visible }){
-  if(visible){
-    return <div> See me! </div>;
-  }
-  return '';
-}
-```
-
 #### Ternary Operator
 
-```jsx
-export default function ToggleDiv({ visible }){
-  let div = visible ? <div> See me! </div> : '';
-  return(
-    { div }
-  );
-}
-```
-
-_embedded ternary operator_
-```jsx
-export default function ToggleDiv({ visible }){
-  return(
-    { visible ? <div> See me! </div> : '' }
-  );
-}
-```
 
 #### `&&` Operator
 
-```jsx
-export default function ToggleDiv({ visible }){
-  return(
-    { visible && <div> See me! </div> }
-  );
-}
-```
 >It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
 Therefore, if the condition is `true`, the element right after && will appear in the output. If it is `false`, React will ignore and skip it
 
